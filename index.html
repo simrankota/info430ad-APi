@@ -17,7 +17,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#">A-Pi</a>
+        <a class="navbar-brand text-light" href="#">A-Pi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -49,37 +49,24 @@
     </nav>
 
     <!-- Jumbotron -->
-    <div class="jumbotron text-center">
+    <div class="jumbotron p-0">
 
-        <!-- Title -->
-        <h2 class="card-title h2">A-Pi's Capstone Project</h2>
-        <!-- Subtitle -->
-        <p class="blue-text my-4 font-weight-bold">Sponsored by Microsoft Learn</p>
-
-        <!-- Grid row -->
-        <div class="row d-flex justify-content-center">
-
-            <!-- Grid column -->
-            <div class="col-xl-7 pb-2">
-
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea
-                    distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit
-                    consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam
-                    rem aperiam.</p>
-
-            </div>
-            <!-- Grid column -->
-
+        <!-- Card image -->
+        <div class="view overlay rounded-top">
+            <img src="./azure.png" class="img-fluid" alt="Picture of Azure">
+            <a href="#">
+                <div class="mask rgba-white-slight"></div>
+            </a>
         </div>
-        <!-- Grid row -->
 
-        <hr class="my-4">
-
-        <div class="pt-2">
-            <button type="button" class="btn btn-blue waves-effect">Explore our solution <span
-                    class="far fa-gem ml-1"></span></button>
-            <button type="button" class="btn btn-outline-primary waves-effect">More information <i
-                    class="fas fa-download ml-1"></i></button>
+        <!-- Card content -->
+        <div class="card-body text-center mb-3">
+            <!-- Title -->
+            <h2 class="card-title h2">Microsoft Encounter</h2>
+            <!-- Text -->
+            <p class="card-text">Goal: reorganize the existing Azure product to improve student accessibility.</p>
+            <!-- Button -->
+            <!-- <a href="#" class="btn purple-gradient btn-rounded mb-4">Explore our solution</a> -->
         </div>
 
     </div>
