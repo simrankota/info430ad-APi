@@ -1,0 +1,19 @@
+{
+  "name": "info490ad-api",
+  "version": "1.0.0",
+  "description": "--- noteId: \"dd10138046d811eab6d563c0ea3a69f4\" tags: []",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simrankota/info430ad-APi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simrankota/info430ad-APi/issues"
+  },
+  "homepage": "https://github.com/simrankota/info430ad-APi#readme"
+}
