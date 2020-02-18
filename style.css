@@ -1,3 +1,22 @@
-.bg-primary {
+.bg-primary{
     background-color: #00A4EF!important;
+}
+
+.bg-dark {
+    background-color: #737373!important;
+}
+
+.text-primary {
+    color: #00A4EF!important;
+}
+
+.jumbotron {
+    background-image: url('https://lh3.googleusercontent.com/proxy/_3Qd2GsHieeO0yqD195fCcamg6jgAn2qnzrXxMdpKh0hzfcoUok7ZTS_zD0jbNLWgMWzZFgqxujjw5m29fO0O1kOpBWMgSIcXqOmCX5BObdn02KYtSs7wibkDOlBMA');
+    background-size: cover;
+    height: 40vh;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
 }

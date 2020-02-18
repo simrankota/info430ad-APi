@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class='bg-light'>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <a class="navbar-brand text-light" href="#">A-Pi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,31 +49,50 @@
     </nav>
 
     <!-- Jumbotron -->
-    <div class="jumbotron p-0">
+    <div class="jumbotron p-0 mt-5">
 
         <!-- Card image -->
         <div class="view overlay rounded-top">
-            <img src="./azure.png" class="img-fluid" alt="Picture of Azure">
+            <!-- <img src="./azure.png" class="img-fluid" alt="Picture of Azure" id="backgroundimg"> -->
             <a href="#">
                 <div class="mask rgba-white-slight"></div>
             </a>
         </div>
 
         <!-- Card content -->
-        <div class="card-body text-center mb-3">
+        <div class="card-body text-center mb-3 pt-5">
             <!-- Title -->
-            <h2 class="card-title h2">Microsoft Encounter</h2>
+            <h2 class="card-title h2 mt-3 text-light">Microsoft Encounter</h2>
             <!-- Text -->
-            <p class="card-text">Goal: reorganize the existing Azure product to improve student accessibility.</p>
+            <p class="card-text mt-md-4 mt-lg-5 pt-3 text-light">Goal: reorganize the existing Azure product to improve student accessibility.</p>
             <!-- Button -->
-            <!-- <a href="#" class="btn purple-gradient btn-rounded mb-4">Explore our solution</a> -->
+            <button type="button" class="btn btn-outline-light mt-5 mt-lg-4">Explore our solution</button> 
         </div>
 
     </div>
     <!-- Jumbotron -->
 
+    <!-- Problem -->
+    <div class="p-3">
+        <h1>Problem</h1>
+        <p>
+            Insert 1-2 paragraphs of value prop here
+        </p>
+        <!-- Insert Images -->
+        <div>
+            <!-- <img src='' alt=''> -->
+        </div>
+    </div>
+
+    <!-- Solution -->
+    <div class='p-3'>
+        <h1>Our Solution</h1>
+        <h2>Key Features</h2>
+    </div>
+
+
     <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer font-small blue pt-4 bg-dark text-light">
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
 
@@ -84,9 +103,9 @@
                 <div class="col-md-6 mt-md-0 mt-3">
 
                     <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
-
+                    <h5 class="text-uppercase">Capstone 2020 by A-Pi</h5>
+                    <p>Members: Simran Kota, Brendan Jacobsen, Jack Chang, Godgiven Reamico</p>
+                    <p>This project is a part of the Capstone Project course at the University of Washington Information School and link to <a href="https://ischool.uw.edu/capstone" title="iSchool Capstone Page" class='text-primary'>iSchool Capstone</a> page</p>
                 </div>
                 <!-- Grid column -->
 
@@ -100,7 +119,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRIZkY45fSbXc_3YJZU2cbdlYJlBFsEEQmKKM-jZO_-G3jMg/viewform">Contact us</a>
                         </li>
                     </ul>
 
@@ -115,7 +134,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="https://docs.microsoft.com/en-us/learn/">Microsoft Learn</a>
                         </li>
                     </ul>
 
