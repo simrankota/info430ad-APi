@@ -16,4 +16,12 @@
     "url": "https://github.com/simrankota/info430ad-APi/issues"
   },
   "homepage": "https://github.com/simrankota/info430ad-APi#readme"
+},
+"scripts": {
+  // ...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build -e <sub-folder name> 
+    -m ‘committing first build of chat app’",
+    "gh-help": "gh-pages --help",
+}
 }
