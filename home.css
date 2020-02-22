@@ -1,0 +1,36 @@
+p, h1, h2, h3, h4, a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav-button, #desc-button {
+    border: 2px solid #0029ff;
+    border-radius: 30px;
+}
+
+#nav-button span, #desc-button span {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.bg-dark, .navbar-dark {
+    background-color: #1e1e1e!important;
+}
+
+.btn-secondary {
+    background-color: #3e3e3e!important;
+}
+
+.btn-secondary:hover {
+    background-color: #2e2e2e!important;
+}
+
+.jumbotron {
+    background-image: url('./imgs/heroimagedark.jpg');
+    background-size: cover;
+    height: 40vh;
+    margin-bottom: 0;
+}
+
+#contact-link:hover {
+    text-decoration: none;
+}
