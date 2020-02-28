@@ -1,4 +1,4 @@
-p, h1, h2, h3, h4, a {
+p, h1, h2, h3, h4, h5, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,12 +30,23 @@ p, h1, h2, h3, h4, a {
 }
 
 .jumbotron {
-    background-image: url('./imgs/heroimagedark.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('./imgs/heroimagedark.jpg');
     background-size: cover;
-    height: 40vh;
+    height: 75vh;
     margin-bottom: 0;
 }
 
 #contact-link:hover {
     text-decoration: none;
+}
+
+.card {
+    display:flex;
+    margin-top: 3vh;
+    position: inline;
+    opacity: 0.8 !important;
+}
+
+.card-text {
+    opacity: 1 !important;
 }
