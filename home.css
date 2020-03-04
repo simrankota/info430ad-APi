@@ -6,6 +6,7 @@ p, h1, h2, h3, h4, h5, a {
     /* border: 2px solid #0029ff; */
     /* background-color: #0029ff!important; */
     border-radius: 30px;
+    /* position: sticky; */ /*Trying this to make the nav elements line up*/
 }
 
 #nav-button span, #desc-button span {
