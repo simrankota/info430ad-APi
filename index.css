@@ -30,10 +30,15 @@ p, h1, h2, h3, h4, h5, a {
     background-color: #2e2e2e!important;
 }
 
+
+.jumbotron .jumbotron-fluid #home-banner {
+    height: 50vh!important;
+}
+
 .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('./imgs/heroimagedark.jpg');
     background-size: cover;
-    height: 50vh;
+    height: 75vh;
     margin-bottom: 0;
 } 
 
@@ -46,18 +51,8 @@ p, h1, h2, h3, h4, h5, a {
     margin-top: 3vh;
     position: inline;
     opacity: 0.8 !important;
-    background-color: #000000;
 }
 
 .card-text {
     opacity: 1 !important;
-}
-
-#profile-id {
-    color: #ffffff;
-    margin-top: 2vh;
-}
-
-#all-courses {
-    text-align: right;
 }
