@@ -51,6 +51,7 @@ p, h1, h2, h3, h4, h5, a {
 
 .card-text {
     opacity: 1 !important;
+    color: #ffffff;
 }
 
 #profile-id {
