@@ -95,25 +95,25 @@
             </div>
             <!--Content taken from: https://docs.microsoft.com/en-us/learn/modules/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/3-exercise-create-qna-knowledge-base-->
             <div class='col-6'>
-                <h3>Overview</h3>
+                <h3 id='overview'>Overview</h3>
                 <p>Let's create a QnA Maker knowledge base (KB).</p>
                 <p><ol type="1">
                 <ul>Go to the <a href="https://www.qnamaker.ai/">QnA Maker portal.</a></ul>
-                <ul>Select Sign in in the upper-right corner and sign in with your Azure credentials. </ul>p>
+                <ul>Select Sign in in the upper-right corner and sign in with your Azure credentials. </ul>
                 <ul>Unless you already have a knowledge base (KB), the portal will point out that you don't have any.</ul>
                 </ol></p>
-                <h3>Hosting a knowledge base</h3> <!--this is a page section-->
+                <h3 id='host'>Hosting a knowledge base</h3> <!--this is a page section-->
                 <p> </p>A knowledge base is a searchable collection of questions and answers. 
                 Knowledge bases are hosted in a QnA service, which is created in Azure, 
                 and determines the region in which the knowledge base will sit, and its billing and performance.
-                <h3 class='mt-3'>Creating a knowledge base and QnA serv</h3>
+                <h3 class='mt-3' id='create'>Creating a knowledge base and QnA serv</h3>
                 <p><ol>
                     <li>In the menu at the top of the portal, select Create a knowledge base.</li>
                     <li>Select Create a QnA service. Selecting this button takes you to the Azure portal 
                         and signs you in with the credentials you used earlier. 
                         You create the QnA Maker service and the associated Azure app service that will host it in this portal.</li>
                 </ol></p>
-                <h3>Provide the QnA Maker service details</h3>
+                <h3 id='provide'>Provide the QnA Maker service details</h3>
                 <p>Provide these details to create the QnA Maker service:</p>
                 <p><ol type="1">
                     <li>Enter a globally unique name for your QnA Maker service, such as yourname-qna. 
@@ -134,10 +134,10 @@
             <div class='col-2 pt-3 mb-5'>
                 <div class='bg-secondary'>
                 <nav class="nav flex-column p-3">
-                    <a class="nav-link active bg-dark text-secondary" href="#">Overview</a>
-                    <a class="nav-link text-light" href="#">Hosting a knowledge base</a>
-                    <a class="nav-link text-light" href="#">Creating a knowledge base and QnA serv</a>
-                    <a class="nav-link text-light" href="#">Provide the QnA Maker service details</a>
+                    <a class="nav-link active bg-dark text-secondary" href="#overview">Overview</a>
+                    <a class="nav-link text-light" href="#host">Hosting a knowledge base</a>
+                    <a class="nav-link text-light" href="#create">Creating a knowledge base and QnA serv</a>
+                    <a class="nav-link text-light" href="#provide">Provide the QnA Maker service details</a>
                   </nav>
                 </div>
             </div>
