@@ -93,7 +93,8 @@ quiz.addEventListener('click', () => {
   let modal = document.querySelector('#signup-window .modal-body')
   var email = document.querySelector("#nemail").value;
   var password = document.querySelector("#npassword").value;
-
+  var fname = document.querySelector("#fname").value;
+  var lname = document.querySelector("#lname").value;
   // Clear modal content on click
   modal.innerHTML = ''
   // Add question prompt
@@ -211,8 +212,6 @@ signUp.addEventListener("click", () => {
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .then((userCredentials) => {
-      var fname = document.querySelector("#fname").value;
-      var lname = document.querySelector("#lname").value;
       let rootRef = firebase.database().ref("users");
       var uid = userCredentials.user.uid;
 
