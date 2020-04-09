@@ -13,13 +13,9 @@ var firebaseConfig = {
   
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  
-  var rootRef = firebase.database().ref();
-  console.log(rootRef);
 
-
-var userDataRef = firebase.database().ref("UserData").orderByKey();
+var userDataRef = firebase.database().ref("users").orderByKey();
+console.log(userDataRef);
 userDataRef.once("value").then(function(snapshot) {
 snapshot.forEach(function(childSnapshot) {
   var key = childSnapshot.key;
@@ -30,5 +26,6 @@ snapshot.forEach(function(childSnapshot) {
   console.log("name value")
   console.log(name_val);
   $("#profile-id").append(name_val);
+  $("#profile-name").append(name_val);
   });
 });

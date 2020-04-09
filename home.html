@@ -42,7 +42,7 @@
                     <button class="btn btn-primary my-2 my-sm-0 mr-3" type="submit">Search</button>
                 </form>
                 <div>
-                    <p id='profile-id'>UserName</p>
+                    <p id='profile-id'></p>
                 </div>
             </div>
         </nav>
@@ -52,7 +52,7 @@
         <div class="container">
             <div class='row justify-content-between'>
                 <div class='col-6'>
-                    <h1 class="display-4 text-light text-center mt-5">Hello, *username*</h1>
+                    <h1 class="display-4 text-light text-center mt-5" id="profile-name">Hello, </h1>
                     <p class="lead text-light text-center mt-5">Welcome back to Microsoft Encounter</p>
                 </div>
                 <!-- <div class="row"> -->
@@ -252,6 +252,17 @@
 
         <!-- </div> -->
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
 </body>
 <script src='./home.js'></script>
 
