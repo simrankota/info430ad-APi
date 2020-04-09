@@ -29,3 +29,6 @@ snapshot.forEach(function(childSnapshot) {
   $("#profile-name").append(name_val);
   });
 });
+
+var curUser = firebase.auth().currentUser.uid
+var userDataRef = firebase.database().ref("users").orderByKey();

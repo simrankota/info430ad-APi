@@ -214,9 +214,16 @@ signUp.addEventListener("click", () => {
     .then((userCredentials) => {
       let rootRef = firebase.database().ref("users");
       var uid = userCredentials.user.uid;
-
+      console.log(uid)
       var user = { [uid]: { fname: fname, lname: lname } };
-      rootRef.set(user);
+      return rootRef.update(user);
+    })
+    .then(() => {
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+         window.location = '/home.html';
+        }
+      })
     })
     .catch(function (error) {
       // Handle Errors here.
@@ -232,16 +239,17 @@ login.addEventListener('click', () => {
   var email = document.querySelector("#email").value;
   var password = document.querySelector("#password").value;
   firebase.auth().signInWithEmailAndPassword(email, password)
+  .then(() => {
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+       window.location = '/home.html';
+      }
+    })
+  })
   .catch(function (error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log(errorMessage);
   });
-})
-
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-   window.location = '/home.html';
-  }
 })
