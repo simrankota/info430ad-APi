@@ -89,133 +89,172 @@ firebase.analytics();
 //   });
 
 let quiz = document.querySelector("#next");
-quiz.addEventListener('click', () => {
-  let modal = document.querySelector('#signup-window .modal-body')
+quiz.addEventListener("click", () => {
+  let modal = document.querySelector("#signup-window .modal-body");
   var email = document.querySelector("#nemail").value;
   var password = document.querySelector("#npassword").value;
   var fname = document.querySelector("#fname").value;
   var lname = document.querySelector("#lname").value;
   // Clear modal content on click
-  modal.innerHTML = ''
+  modal.innerHTML = "";
   // Add question prompt
-  let roleTitle = document.createElement('label')
-  roleTitle.textContent = 'What role are you interested in?'
-  roleTitle.classList.add('text-dark')
-  modal.appendChild(roleTitle)
-  
+  let roleTitle = document.createElement("label");
+  roleTitle.textContent = "What role are you interested in?";
+  roleTitle.classList.add("text-dark");
+  modal.appendChild(roleTitle);
+
   // add divs for options
-  let div1 = document.createElement('div')
-  div1.classList.add('form-check')
+  let div1 = document.createElement("div");
+  div1.classList.add("form-check");
 
-  let div2 = document.createElement('div')
-  div2.classList.add('form-check')
+  let div2 = document.createElement("div");
+  div2.classList.add("form-check");
 
-  let div3 = document.createElement('div')
-  div3.classList.add('form-check')
+  let div3 = document.createElement("div");
+  div3.classList.add("form-check");
 
-  let div4 = document.createElement('div')
-  div4.classList.add('form-check')
+  let div4 = document.createElement("div");
+  div4.classList.add("form-check");
 
-  let div5 = document.createElement('div')
-  div5.classList.add('form-check')
+  let div5 = document.createElement("div");
+  div5.classList.add("form-check");
 
   // add input options for divs
-  let input1 = document.createElement('INPUT')
-  input1.classList.add('form-check-input')
-  input1.type = 'radio'
-  input1.value = 'Data Science'
-  input1.id = 'example1'
-  input1.name = 'options'
+  let input1 = document.createElement("INPUT");
+  input1.classList.add("form-check-input");
+  input1.type = "radio";
+  input1.value = "Data Science";
+  input1.id = "example1";
+  input1.name = "options";
 
-  let input2 = document.createElement('INPUT')
-  input2.classList.add('form-check-input')
-  input2.type = 'radio'
-  input2.value = 'Software Developer'
-  input2.id = 'example2'
-  input2.name = 'options'
+  let input2 = document.createElement("INPUT");
+  input2.classList.add("form-check-input");
+  input2.type = "radio";
+  input2.value = "Software Developer";
+  input2.id = "example2";
+  input2.name = "options";
 
-  let input3 = document.createElement('INPUT')
-  input3.classList.add('form-check-input')
-  input3.type = 'radio'
-  input3.value = 'Cybersecurity'
-  input3.id = 'example3'
-  input3.name = 'options'
+  let input3 = document.createElement("INPUT");
+  input3.classList.add("form-check-input");
+  input3.type = "radio";
+  input3.value = "Cybersecurity";
+  input3.id = "example3";
+  input3.name = "options";
 
-  let input4 = document.createElement('INPUT')
-  input4.classList.add('form-check-input')
-  input4.type = 'radio'
-  input4.value = 'Product/Project Manager'
-  input4.id = 'example4'
-  input4.name = 'options'
+  let input4 = document.createElement("INPUT");
+  input4.classList.add("form-check-input");
+  input4.type = "radio";
+  input4.value = "Product/Project Manager";
+  input4.id = "example4";
+  input4.name = "options";
 
-  let input5 = document.createElement('INPUT')
-  input5.classList.add('form-check-input')
-  input5.type = 'radio'
-  input5.value = 'Non-technical'
-  input5.id = 'example5'
-  input5.name = 'options'
+  let input5 = document.createElement("INPUT");
+  input5.classList.add("form-check-input");
+  input5.type = "radio";
+  input5.value = "Non-technical";
+  input5.id = "example5";
+  input5.name = "options";
 
   // add role labels
-  let label1 = document.createElement('label')
-  label1.classList.add('form-check-label', 'text-dark')
-  label1.for = 'example1'
-  label1.textContent = 'Data Science'
+  let label1 = document.createElement("label");
+  label1.classList.add("form-check-label", "text-dark");
+  label1.for = "example1";
+  label1.textContent = "Data Science";
 
-  let label2 = document.createElement('label')
-  label2.classList.add('form-check-label', 'text-dark')
-  label2.for = 'example2'
-  label2.textContent = 'Software Developer'
+  let label2 = document.createElement("label");
+  label2.classList.add("form-check-label", "text-dark");
+  label2.for = "example2";
+  label2.textContent = "Software Developer";
 
-  let label3 = document.createElement('label')
-  label3.classList.add('form-check-label', 'text-dark')
-  label3.for = 'example3'
-  label3.textContent = 'Cybersecurity'
+  let label3 = document.createElement("label");
+  label3.classList.add("form-check-label", "text-dark");
+  label3.for = "example3";
+  label3.textContent = "Cybersecurity";
 
-  let label4 = document.createElement('label')
-  label4.classList.add('form-check-label', 'text-dark')
-  label4.for = 'example4'
-  label4.textContent = 'Product/Project Manager'
+  let label4 = document.createElement("label");
+  label4.classList.add("form-check-label", "text-dark");
+  label4.for = "example4";
+  label4.textContent = "Product/Project Manager";
 
-  let label5 = document.createElement('label')
-  label5.classList.add('form-check-label', 'text-dark')
-  label5.for = 'example5'
-  label5.textContent = 'Other'
+  let label5 = document.createElement("label");
+  label5.classList.add("form-check-label", "text-dark");
+  label5.for = "example5";
+  label5.textContent = "Other";
 
   // pull together all elements
-  div1.appendChild(input1)
-  div1.appendChild(label1)
-  modal.appendChild(div1)
+  div1.appendChild(input1);
+  div1.appendChild(label1);
+  modal.appendChild(div1);
 
-  div2.appendChild(input2)
-  div2.appendChild(label2)
-  modal.appendChild(div2)
+  div2.appendChild(input2);
+  div2.appendChild(label2);
+  modal.appendChild(div2);
 
-  div3.appendChild(input3)
-  div3.appendChild(label3)
-  modal.appendChild(div3)
+  div3.appendChild(input3);
+  div3.appendChild(label3);
+  modal.appendChild(div3);
 
-  div4.appendChild(input4)
-  div4.appendChild(label4)
-  modal.appendChild(div4)
+  div4.appendChild(input4);
+  div4.appendChild(label4);
+  modal.appendChild(div4);
 
-  div5.appendChild(input5)
-  div5.appendChild(label5)
-  modal.appendChild(div5)
+  div5.appendChild(input5);
+  div5.appendChild(label5);
+  modal.appendChild(div5);
 
-let submitBtn = document.querySelector('#next')
-submitBtn.textContent = 'Submit'
-submitBtn.id = 'signup'
+  let submitBtn = document.querySelector("#next");
+  submitBtn.textContent = "Submit";
+  submitBtn.id = "signup";
 
-let signUp = document.querySelector("#signup");
-signUp.addEventListener("click", () => {
+  let signUp = document.querySelector("#signup");
+  signUp.addEventListener("click", () => {
+    var r = document.getElementsByName("options");
+    var value;
+    for (var i = 0; i < r.length; i++) {
+      if (r[i].checked) {
+        // insert code to use the checked value
+        value = r[i].value;
+        break;
+      }
+    }
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then((userCredentials) => {
+        let rootRef = firebase.database().ref("users");
+        var uid = userCredentials.user.uid;
+        var user = { [uid]: { fname: fname, lname: lname, role: value } };
+        return rootRef.update(user);
+      })
+      .then(() => {
+        firebase.auth().onAuthStateChanged(function (user) {
+          if (user) {
+            window.location = "/home.html";
+          }
+        });
+      })
+      .catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorMessage);
+      });
+  });
+});
+
+let login = document.querySelector("#login");
+login.addEventListener("click", () => {
+  var email = document.querySelector("#email").value;
+  var password = document.querySelector("#password").value;
   firebase
     .auth()
-    .createUserWithEmailAndPassword(email, password)
-    .then((userCredentials) => {
-      let rootRef = firebase.database().ref("users");
-      var uid = userCredentials.user.uid;
-      var user = { [uid]: { fname: fname, lname: lname } };
-      rootRef.set(user);
+    .signInWithEmailAndPassword(email, password)
+    .then(() => {
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          window.location = "/home.html";
+        }
+      });
     })
     .catch(function (error) {
       // Handle Errors here.
@@ -224,23 +263,3 @@ signUp.addEventListener("click", () => {
       console.log(errorMessage);
     });
 });
-})
-
-let login = document.querySelector('#login')
-login.addEventListener('click', () => {
-  var email = document.querySelector("#email").value;
-  var password = document.querySelector("#password").value;
-  firebase.auth().signInWithEmailAndPassword(email, password)
-  .catch(function (error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log(errorMessage);
-  });
-})
-
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-   window.location = '/home.html';
-  }
-})
