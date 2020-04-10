@@ -8,7 +8,10 @@ var firebaseConfig = {
     appId: "1:723627479249:web:5836be0ffe2dceaf4e75f0",
     measurementId: "G-HLJLQNXMCW",
   };
-
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
 // var userDataRef = firebase.database().ref("users").orderByKey();
 // console.log(userDataRef);
 // userDataRef.once("value").then(function(snapshot) {
@@ -33,9 +36,10 @@ firebase.auth().onAuthStateChanged(function(user) {
     console.log(user.uid)
     let uid = user.uid
     firebase.database().ref("users").once('value').then((snapshot) => {
-      console.log(snapshot.val())
-      var users = snapshot.val()
-      name_val = users[uid].fname
+      console.log(snapshot.val());
+      var users = snapshot.val();
+      name_val = users[uid].fname;
+      console.log("who is this" + name_val);
     $("#profile-id").append(name_val);
     $("#profile-name").append(name_val);
     })
