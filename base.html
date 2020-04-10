@@ -13,12 +13,14 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel='stylesheet' href='./index.css'>
     <link rel='stylesheet' href='./base.css'>
+    <link rel='icon' type='img/jpg' href='./imgs/logo.jpg'>
 </head>
 
 <body class='bg-dark'>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand ml-3" href="#">Encounter</a>
+            <a class="navbar-brand" href="#"><img src='./imgs/logo.jpg' width='30' height="30"
+                    class='d-inline-block align-top' alt='Microsoft Encounter logo'></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,19 +28,21 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./catalog.html">Catalog<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">References</a>
                     </li>
                 </ul>
+
                 <a class="btn btn-outline-primary my-2 my-sm-0 mr-3" type="submit" id='login-btn' data-toggle='modal'
                     data-target='#login-window'><span>Log In</span></a>
                 <a class="btn btn-outline-primary my-2 my-sm-0 mr-3" type="submit" id='signup-btn' data-toggle="modal"
                     data-target="#signup-window"><span>Sign Up</span></a>
             </div>
         </nav>
+
         <div class="modal fade" id="login-window" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -83,14 +87,14 @@
                         <form class='container'>
                             <div class="form-group row">
                                 <div class='col'>
-                                <label for="First Name">First Name</label>
-                                <input type="text" class="form-control" id="fname" aria-describedby="nameHelp"
-                                    placeholder="First Name">
+                                    <label for="First Name">First Name</label>
+                                    <input type="text" class="form-control" id="fname" aria-describedby="nameHelp"
+                                        placeholder="First Name">
                                 </div>
                                 <div class='col'>
                                     <label for="Last Name">Last Name</label>
-                                <input type="text" class="form-control" id="lname" aria-describedby="nameHelp"
-                                    placeholder="Last Name">
+                                    <input type="text" class="form-control" id="lname" aria-describedby="nameHelp"
+                                        placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="form-group">
