@@ -9,23 +9,6 @@ var firebaseConfig = {
     measurementId: "G-HLJLQNXMCW",
   };
 
-<<<<<<< HEAD
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-
-var database = firebase.database().uid;
-console.log("what does database look like")
-console.log(database);
-
-database.once("value")
-  .then(function(snapshot) {
-    console.log("what is snapshot")
-    console.log(snapshot);
-    console.log("this is child");
-    console.log(snapshot.child());
-  });
-=======
 // var userDataRef = firebase.database().ref("users").orderByKey();
 // console.log(userDataRef);
 // userDataRef.once("value").then(function(snapshot) {
@@ -71,4 +54,3 @@ firebase.auth().onAuthStateChanged(function(user) {
 //     console.log("this is child");
 //     console.log(snapshot.child());
 //   });
->>>>>>> 4a8d89d07fb6ee89dc2135071672391f3aa717ab
